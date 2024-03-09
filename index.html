@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas </title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg " style="background-color: #2980b9;" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" width="250"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cine
+                    </a>
+                    <ul class="dropdown-menu" id="menuSup">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="textBuscar">
+                  <button class="btn btn-info" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container-fluid">
+        <h4 class="text-center text-white my-4">Tendencias</h4>
+        <section class="container" id="tendencias">
+          
+            <img src="img/peliculas/14dIvYV9d54bekA8EX9o7mtXQ9i.jpg" alt="" class="img-fluid">
+          
+         
+        </section>
+        <section class="row my-4">
+            <div class="col-md-3 col-lg-2">
+              <h5 class="text-center text-white titulo">Menu Generos</h5>
+              <div id="menuLat">
+                <a href="#" class="btn btn-primary d-grid">Genero</a>
+              </div>
+            </div>
+            <div class="col-md-9 col-lg-10">
+              <h5 class="text-center text-white titulo" id="titulo">Peliculas</h5>
+              <div class="row" id="muestraPeliculas">
+                <div class="col-md-4 col-lg-3 col-xl-2">
+                  <div class="card" >
+                    <img src="img/peliculas/19rA9FjhwI4VEfaCXV7648XUInR.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <p class="card-title">Card title</p>
+                    </div>
+                    <div class="card-footer text-center">
+                      <a href="#" class="btn btn-info btn-sm">Detalle</a>
+                      <a href="#" class="btn btn-danger btn-sm">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+      <a href="datos/datos.rar" class="btn btn-danger">Datos</a>
+      <a href="img/peliculas.rar" class="btn btn-danger">Imagenes</a>
+    </footer>
+
+    <div class="modal fade" id="detalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Detalle de la Pelicula</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row" id="detalleModal">
+              <div class="col-6 bg-info">
+                <img src="img/peliculas/19rA9FjhwI4VEfaCXV7648XUInR.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-6">
+                <h3>Titulo</h3>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
